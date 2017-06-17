@@ -76,5 +76,4 @@ public class Main extends JavaPlugin {
 	    p.getInventory().setItem(1, profile);
 	    
 	}
-	
 }
