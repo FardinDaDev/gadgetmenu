@@ -18,7 +18,7 @@ public class Main extends JavaPlugin {
 
 	public static HashMap<String, Effects> effect = new HashMap<String, Effects>();
 	public static Main plugin;
-	public static String prefix = "§a§lMine§2§lTitan §7";
+	public static String prefix = "Â§aÂ§lMineÂ§2Â§lTitan Â§7";
 	
 	@Override
 	public void onEnable() {
@@ -56,7 +56,7 @@ public class Main extends JavaPlugin {
 	    ItemStack menu = new ItemStack(Material.BLAZE_ROD);
 	    ItemMeta menuMeta = menu.getItemMeta();
 	    
-	    menuMeta.setDisplayName("§e§lGadget-Menu");
+	    menuMeta.setDisplayName("Â§eÂ§lGadget-Menu");
 	    menu.setItemMeta(menuMeta);
 	    
 	    p.getInventory().setItem(7, menu);
@@ -67,22 +67,14 @@ public class Main extends JavaPlugin {
 
 	    profileMeta.setOwner(p.getName());
 
-	    profileMeta.setLore(Arrays.asList("§7Seeing your stats and profile."));
+	    profileMeta.setLore(Arrays.asList("Â§7Seeing your stats and profile."));
 	    
-	    profileMeta.setDisplayName("§cMy profile");
+	    profileMeta.setDisplayName("Â§cMy profile");
 	    
 	    profile.setItemMeta(profileMeta);
  
 	    p.getInventory().setItem(1, profile);
 	    
-    }
-	    
-
-
-
-	
-	public static Main getInstance() {
-		return plugin;
 	}
 	
 }
